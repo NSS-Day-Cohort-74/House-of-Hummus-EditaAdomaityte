@@ -15,7 +15,8 @@ textarea {
 }
 
 body {
-    background-color: rgb(245, 245, 245);
+    background: url(https://t3.ftcdn.net/jpg/02/68/76/94/360_F_268769430_XeLsBOfd5FZiXHFYWLejwKcoIKhaf0I3.jpg);
+    background-size: cover;
 }
 
 h1,h2,h3,h4,h5,h6 {
@@ -31,8 +32,8 @@ ul {
 #purchase {
     margin: 1rem 0 2rem 2rem;
     padding: 0.5rem;
-    background-color: rgb(111, 72, 227);
-    color: rgb(230, 220, 255);
+    background-color: rgb(90, 68, 27);
+    color: rgb(255, 255, 255);
     font-size: 1rem;
 }
 

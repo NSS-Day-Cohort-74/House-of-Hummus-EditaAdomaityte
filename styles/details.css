@@ -1,16 +1,40 @@
 .choices {
     display: flex;
     justify-content: space-evenly;
+    padding: 1rem;
 }
 
 .options {
-    flex-basis: 24%;
+    display: flex;
+    flex-direction: row;
+    gap:10px;
     margin: 0 2rem;
-    border: 1px dashed dodgerblue;
+    border: 1px dashed rgb(88, 62, 14);
     padding: 1rem;
     border-radius: 0.5rem;
     box-shadow: 0.25rem 0.25rem 0.5rem rgb(143, 143, 143);
+
 }
+.choices_vegetable.options {
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    background-color: blanchedalmond;
+}
+.choices_entree.options {
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    background-color: blanchedalmond;
+}
+.choices_side.options {
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    background-color: blanchedalmond;
+}
+
+
 
 .customOrders {
     padding: 1rem 2rem;

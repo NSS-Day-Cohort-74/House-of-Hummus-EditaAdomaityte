@@ -12,19 +12,19 @@ export const FoodTruck = async () => {
     return `
         <header class="header">
             <img src="./images/hummus.png" class="logo" />
-            <h1 class="title">Laura Kathryn's House of Hummus</h1>
+            <h1 class="title">Edita's House of Hummus</h1>
         </header>
 
         <article class="options">
-            <section class="choices__entree options">
+            <section class="choices_entree options">
                 <h2>Entrees</h2>
                 ${entreeHTML}
             </section>
-            <section class="choices__vegetable options">
+            <section class="choices_vegetable options">
                 <h2>Vegetables</h2>
                 ${veggieHTML}
             </section>
-            <section class="choices__side options">
+            <section class="choices_side options">
                 <h2>Sides</h2>
                 ${sideHTML}
             </section>
