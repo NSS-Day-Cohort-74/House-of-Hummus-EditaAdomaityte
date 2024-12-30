@@ -2,7 +2,7 @@ const transientState = {
     "id": 0,
     "entreeId":0,
     "vegetableId":0,
-    "sideID":0
+    "sideId":0
 }
 
 export const setEntreeId = (chooseEntree) => {
