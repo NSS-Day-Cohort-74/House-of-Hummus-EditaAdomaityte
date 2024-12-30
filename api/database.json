@@ -136,6 +136,12 @@
       "entreeId": 9,
       "vegetableId": 2,
       "sideId": 2
+    },
+    {
+      "id": 2,
+      "entreeId": 1,
+      "vegetableId": 1,
+      "sideId": 2
     }
   ]
 }

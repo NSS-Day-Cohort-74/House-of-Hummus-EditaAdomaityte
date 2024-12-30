@@ -11,13 +11,13 @@ export const handlePurchaseClick = (clickEvent) => {
 
 
 export const Sales = async () => {
-    const fetchSales = await fetch("http://localhost:8088/purchases?_expand=entree&_expand=vegetable&_expand=side")
-    const sales = await fetchSales.json
-    
+    const fetchSales = await fetch("http://localhost:3000/purchases?_expand=entree&_expand=vegetable&_expand=side")
+    const sales = await fetchSales.json()
+        let number = 1
     let salesDivs = sales.map(
         (sale) => {
-            let number = 0
-            const SalePrice=sale.entree.price+sale.vegetable.price+sale.order.price
+            
+            const SalePrice=(sale.entree.price+sale.vegetable.price+sale.side.price).toFixed(2)
             return `<div>
             Receipt #${number++} = $ ${SalePrice}
             </div>`
