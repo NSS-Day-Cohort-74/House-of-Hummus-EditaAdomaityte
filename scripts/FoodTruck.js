@@ -4,10 +4,10 @@ import { Sides } from "./SideDishes.js"
 import { Veggies } from "./Vegetables.js"
 
 export const FoodTruck = async () => {
-   const salesHTML =await Sales()
-   const sideHTML = await Sides()
-   const veggieHTML = await Veggies()
-   const entreeHTML = await Entrees()
+    const salesHTML = await Sales()
+    const sideHTML = await Sides()
+    const veggieHTML = await Veggies()
+    const entreeHTML = await Entrees()
 
     return `
         <header class="header">
@@ -42,4 +42,3 @@ export const FoodTruck = async () => {
 
     `
 }
- 

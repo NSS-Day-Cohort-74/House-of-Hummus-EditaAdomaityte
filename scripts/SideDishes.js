@@ -1,8 +1,8 @@
 import { setSideId } from "./TransientState.js"
 
 
-export const Sides = async() => {
-   document.addEventListener("change",handleSideChange)
+export const Sides = async () => {
+    document.addEventListener("change", handleSideChange)
     const getSides = await fetch("http://localhost:3000/sides")
     const sides = await getSides.json()
 
@@ -13,14 +13,14 @@ export const Sides = async() => {
             <input type='radio' name='side' value='${side.id}'/>${side.title}
             </div>`
         }
-     )
+    )
 
-     html += mapSides.join("")
+    html += mapSides.join("")
     return html
 }
 
-const handleSideChange = (changeEvent) =>{
-    if(changeEvent.target.name === 'side'){
+const handleSideChange = (changeEvent) => {
+    if (changeEvent.target.name === 'side') {
         const convertToNumber = parseInt(changeEvent.target.value)
         setSideId(convertToNumber)
     }
